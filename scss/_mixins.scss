@@ -1,0 +1,33 @@
+@mixin flex-box($space, $align) {
+  display: flex;
+  justify-content: $space;
+  align-items: $align;
+}
+@mixin list-unstyle {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+@mixin mobile-first($min) {
+  @media only screen and (min-width:$min)  {
+   @content;
+  }
+}
+@mixin sitcky-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin before($absolute, $top, $left, $width, $height,) {
+  position: $absolute;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,138 @@
+/*! Header start */
+.site-header {
+  padding-top: 77px;
+background-color: #014E56;
+  padding-bottom: 140px;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-haeder__image {
+  margin-right: 80px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+.header-link:first-child {
+margin-right: 40px;
+}
+.header-link {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+}
+.header-button {
+  display: block;
+  width: 153px;
+  padding: 8px 3px;
+  margin-left: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  line-height: 32px;
+  background-color: transparent;
+  border: none;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+.site-header__buttontou {
+display: none;
+  background-color: transparent;
+}
+label {
+margin-left: auto;
+cursor: pointer;
+display: none;
+}
+.img1 {
+display: none;
+}
+
+.img2 {
+  display: none;
+ 
+}
+
+.dark {
+  transform: translateX(0);
+}
+.site-header__buttontou {
+  display: none;
+  // opacity: 0;
+  width: 30px;
+  height: 30px;
+  // background-color: transparent;
+  background-image: url("../../images/header-icon.svg");
+  background-repeat: no-repeat;
+}
+ .site-header__buttontou:checked ~ .spann .img1 {
+   display: none;
+
+ }
+
+ .site-header__buttontou:checked~.spann .img2 {
+   display: block;
+ }
+@media only screen and (max-width: 1000px) {
+  .site-header {
+    padding-bottom: 122px;
+  }
+}
+@media only screen and (max-width: 768px) {
+.site-haeder__image {
+  margin: 0;
+  width: 128px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 0 24px;
+  }
+    .site-header__wrapper {
+      position: relative;
+    }
+nav {
+  // display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px 0 100px;
+  background-color: #435b7f;
+  transform: translateX(-120%);
+  transition: transform 0.5s linear;
+  border-radius: 5px;
+}
+.img1 {
+  display: block;
+}
+.header-button {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-decoration: none;
+}
+.header-link {
+  margin: 0 auto;
+}
+.header-link:first-child {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+ .site-header {
+   padding-bottom: 80px;
+ }
+ label {
+  display: block;
+  margin-left: auto;
+ }
+
+
+}
